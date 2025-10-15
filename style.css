@@ -5,70 +5,84 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh
+    background-color: #d4e1ed;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #416589;
+    margin: 10px 20px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 10px;
 }
 
 h1 {
-    margin-top: -10%;
-    margin-bottom: 2%;
-
+    text-align: center;
+    color: #416589;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;  
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #a5c6ff;
+    border-radius: 8px;
+    box-shadow:#416589;
 }
 
 input {
-    margin-block: 3%;
-    
-}
-
-input[type="text"] {
-    background-color: rgb(240, 240, 240);
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 5px;
-    
 }
 
-input[type="number"] {
-    background-color: rgb(240, 240, 240);
-    border: 1px solid blue;
-    border-radius: 4px;
-    padding: 5px;
-} 
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    }
 
-.login {
-    margin: 0px 10px;
-    padding: 15px;
-    text-align: end;
-}
-
-input[type="button"] {
-    border: 5px;
-    border-color: rgb(64, 64, 167);
-    border-style: solid;
-    border-radius: 10px;
+img {
+    border: 5px solid #3c5cb3;
+    border-radius: 50%;
     background-color: white;
-    color: rgb(64, 64, 167);
-    transition: background-color rgb(64, 64, 167), transition 1s;
-    padding: 3px 30px 3px 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.imagem {
     text-align: center;
-    margin: 10px 2px;
-    
+    margin-bottom: 20px;
 }
 
-header {
-    position: fixed;
-    top: 0; 
-    right: 0;
-    margin: 7% 40%;
-    
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
 }
-
 a {
     text-decoration: none;
     color: black;
+}
+
+button {
+    background-color: #416589;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
