@@ -28,7 +28,7 @@ cpfInput.addEventListener('input', function() {
   } else {
     erroCpf.style.display = 'none';
   }
-  this.value = this.value.replace(/[^0-9\.]/g, '');
+  this.value = this.value.replace(/[^0-9\.-]/g, '');
 });
 
 const rgInput = document.getElementById('rg');
@@ -39,7 +39,7 @@ rgInput.addEventListener('input', function() {
   } else {
     erroRg.style.display = 'none';
   }
-  this.value = this.value.replace(/[^0-9\.-]/g, '');
+  this.value = this.value.replace(/[^0-9\.]/g, '');
 });
 
 const enderecoInput = document.getElementById('endereco');
